@@ -1,4 +1,4 @@
-const URL = "https://django-cheese-backend-yyy9.onrender.com"
+const URL = "http://localhost:8000/cheese/"
 
 export const CheesesLoader = async () => {
     const data = await fetch(URL)
@@ -8,7 +8,7 @@ export const CheesesLoader = async () => {
 }
 
 export const ShowCheese = async ({params}) => {
-    const data = await fetch(URL+`/cheese/${params.id}/`)
+    const data = await fetch(URL+params.id)
     const cheese = await data.json()
     console.log(cheese)
     return cheese

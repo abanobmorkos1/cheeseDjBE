@@ -1,5 +1,5 @@
 import { redirect } from "react-router-dom"
-const url = "https://django-cheese-backend.onrender.com"
+const url = "http://localhost:8000/cheese/"
 
 export async function createCheese({request}){
     const forminfo = await request.formData();

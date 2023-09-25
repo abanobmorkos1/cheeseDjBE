@@ -2,6 +2,8 @@ import { useLoaderData, Form } from "react-router-dom";
 import Cheese from "../components/Post";
 const Index = (props) => {
     const data = useLoaderData()
+    console.log(data)
+    
     return <>
     <div style={{textAlign:"center"}}>
         <h2>Create a Cheese</h2>

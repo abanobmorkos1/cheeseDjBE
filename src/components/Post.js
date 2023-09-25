@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
 function Cheese({cheese}){
+    console.log(cheese)
     const styleing = {
         textAlign: 'center',
         border: '3px solid',
